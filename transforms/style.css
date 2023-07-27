@@ -1,0 +1,39 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+}
+
+.box1 {
+  background-color: rgb(42, 42, 109);
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.box1:hover {
+  transition: ease-in-out 0.8s;
+  transform: rotate(50deg);
+}
+
+.box2 {
+  background-color: rgb(179, 84, 40);
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.box2:hover {
+  transition: ease-out 0.8s;
+  transform: scale(2);
+}
