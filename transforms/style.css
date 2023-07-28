@@ -4,6 +4,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 100px;
+  flex-wrap: wrap;
 }
 
 .box1 {
@@ -34,6 +35,28 @@ body {
 }
 
 .box2:hover {
-  transition: ease-out 0.8s;
+  transition: ease-in-out 0.8s;
   transform: scale(2);
+}
+
+.redbox,
+.bluebox {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.redbox {
+  background-color: red;
+  transform: translate(-100%) rotate(45deg);
+}
+
+.bluebox {
+  background-color: blue;
+  transform: rotate(45deg) translate(100%);
+}
+
+.redbox:hover {
+  transition: all 0.8s ease-in-out;
+  transform: perspective(10) rotateZ(1turn);
 }
